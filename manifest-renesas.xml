@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote fetch="https://git.yoctoproject.org/git" name="yocto" />
+    <remote fetch="https://github.com/openembedded" name="oe" />
+    <remote fetch="https://github.com/renesas-rz" name="renesas" />
+
+    <project name="poky" remote="yocto" revision="refs/tags/scarthgap-5.0.8" path="sources/poky" />
+    <project name="meta-openembedded" remote="oe"
+        revision="67ad83dd7c2485dae0c90eac345007af6195b84d" path="sources/meta-openembedded" />
+    <project name="meta-arm" remote="yocto" revision="950a4afce46a359def2958bd9ae33fc08ff9bb0d"
+        path="sources/meta-arm" />
+    <project name="meta-renesas" remote="renesas" revision="refs/tags/BSP-4.0.0"
+        path="sources/meta-renesas" />
+    <project name="meta-virtualization" remote="yocto"
+        revision="9287a355b338361e42027ce371444111a791d64f"
+        path="sources/meta-virtualization" /> 
+
+</manifest>
